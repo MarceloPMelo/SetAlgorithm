@@ -58,7 +58,7 @@ def get_subsets(input_set):
         - Chama backtrack(i + 1, current) para continuar construindo o subconjunto.
         - Depois remove items[i] de current para testar outras possibilidades.
     - No final, retorna result com todos os subconjuntos, incluindo o vazio.
-    - Fora da função, para mostrar o resultado, percorra result.iterator() e use toArray() em cada subset.
+    - Fora da função, para mostrar o resultado, percorra result.iterator() e use to_list() em cada subset.
     """
 
 
@@ -111,7 +111,7 @@ def main():
         break
     
     subsets = get_subsets(s)
-    output = [sub.to_list() for sub in subsets]
+    output = [sub.toArray() for sub in subsets]
     print(output)
 
 
