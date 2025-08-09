@@ -111,7 +111,7 @@ def main():
         break
     
     subsets = get_subsets(s)
-    output = [sub.toArray() for sub in subsets]
+    output = [sub.to_list() for sub in subsets]
     print(output)
 
 
